@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/calculator-01/css/index.css"/>
+</head>
+<body>
+    <h1 class="title">Welcome to Katik!</h1>
+    <p class="subtitle1">Hai! Everyone, Welcome to Katik!</p>
+    <p class="subtitle2">Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling sebuah segitiga</p>
+    </div>
+    <header>
+        <nav>
+            <ul class="menu">
+                <a href="index.html" class="menu-triangle">Triangle</a>
+                <a href="index2.html"class="menu-Triangle-Parallelogramtriangle">Triangle Parallelogram</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <Section en="Triangle">
+            <div class="card">
+                <center>
+                    <h2 class="luas-jajargenjang">Luas Jajargenjang</h2>
+                    <img src="assets/jajargenjang.png" width="400px">
+                    <div>
+                        <h4>Rumus Luas Segitiga</h4>
+                        <p>L = A x T</p>
+                    </div>
+                </center>
+                <div>
+                    <p>Dimana :</p>
+                    <p>L : Luas</p>
+                    <p>A : Alas</p>
+                    <p>T : Tinggi</p>
+                </div>
+                <div class="form-hitung">
+                    <h1>Hitung Luas Jajargenjang</h1>
+                    <form action="" class="form-triangle" onsubmit="return false">
+                        <input type="number" id="alas" placeholder="Masukan Alas">
+                        <input type="number" id="tinggi" placeholder="Masukan Tinggi">
+                        <div>
+                            <p id="error"></p>
+                            <p id="luas"></p>
+                        </div>
+                        <button type="button" onclick="hitungLuasjajargenjang()" class="button-triangle">Hitung</button>
+                        <button type="reset" class="button-reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <main>
+            <section id="triangle">
+                <div class="card">
+                    <center>
+                        <h2 class="Keliling-Jajargenjang">Keliling Jajargenjang</h2>
+                        <img src="assets/jajargenjang.png" width="400px">
+                        <div>
+                            <h4>Rumus Keliling Jajargenjang</h4>
+                            <p>K = 2 x (S1+S2) </p>
+                        </div>
+                    </center>
+                    <div>
+                        <p>Dimana :</p>
+                        <p>K : Keliling</p>
+                        <p>S1 : Alas</p>
+                        <p>S2 : Tinggi</p>
+                    </div>
+                    <div class="form-hitung">
+                        <h1>Hitung Keliling Jajargenjang</h1>
+                        <form action="" class="form-triangle" onsubmit="return false">
+                            <input type="number" id="sisi-a" placeholder="Sisi A" required>
+                            <input type="number" id="sisi-b" placeholder="Sisi B" required>
+                            <div>
+                                <p id="keliling"></p>
+                                <p id="eror"></p>
+                            </div>
+                            <button type="button" onclick="hitungKelilingjajargenjang()" class="button-triangle">Hitung</button>
+                            <button type="reset" class="button-reset">Reset</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

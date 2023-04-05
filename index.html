@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="/calculator-01/css/index.css"/>
+    </head>
+    <body>
+<!--title-->
+        <h1 class="title">Welcome to Katik!</h1>
+        <p class="subtitle1">Hai! Everyone, Welcome to Katik!</p>
+        <p class="subtitle2">Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling sebuah segitiga</p>
+<!--header/navbar-->
+        <header>
+            <nav>
+                <ul class="menu">
+                    <a href="index.html" class="menu-triangle">Triangle</a>
+                    <a href="index2.html"class="menu-Triangle Parallelogram">Triangle Parallelogram</a>
+                </ul>
+            </nav>
+        </header>
+<!--main page-->
+        <main class="main">
+<!--triangle-->            <Section en="Triangle">
+               <div class="card">
+                <center>
+                    <div>
+                        <h2 class="luas-segitiga">Luas Segitiga</h2>
+                    </div>
+                    <img src="assets/luas segitiga.png" width="300px">  
+                </center>
+                <div>
+                    <h4>Rumus Luas Segitiga:</h4>
+                    <p>L=1/2 x a x t</p>
+                </div>
+                <div>
+                    <p>Dimana:</p>
+                    <p>L= Luas</p>
+                    <p>a= Panjang Alas</p>
+                    <p>t= Tinggi</p>
+                </div>
+                <div class="form-hitung">
+                    <h1>Hitung Luas Segitiga</h1>
+                    <form action="" class="form-triangle" onsubmit="return false;">
+                        <input type="number" id="alas" placeholder="Masukan Alas">
+                        <input type="number" id="tinggi" placeholder="Masukan Tinggi">
+                        <div>
+                            <p id="error"></p>
+                            <p id="luas"></p>
+                        </div>
+                        <button type="button" onclick="hitungLuas()" class="button-triangle">Hitung</button>
+                        <button type="reset" class="button-reset">Reset</button>
+
+                    </form>
+                </div>
+               </div>
+            </Section>
+        </main>
+            
+        <main class="main">
+            <Section en="Triangle">
+                <div class="card">
+                 <center>
+                    <div>   
+                        <h2 class="Keliling-Segitiga">Keliling Segitiga</h2>
+                    </div>
+                    <img src="assets/keliling segitiga.png" width="300px">
+                </center>
+                    <div>
+                        <h4>Rumus Keliling Segitiga:</h4>
+                        <p>K= a+b+c</p>
+                    </div>
+                    <div>
+                        <p>Dimana:</p>
+                        <p>K= Keliling</p>
+                        <p>a= Sisi a</p>
+                        <p>b= Sisi b</p>
+                        <p>c= Sisi c</p>
+                    </div>
+                    <div class="form-hitung">
+                        <h1>Hitung Keliling Segitiga</h1>
+                        <form action="" class="form-triangle" onsubmit="return false">
+                            <input type="number" id="sisi-a" placeholder="Sisi a" required>
+                            <input type="number" id="sisi-b" placeholder="Sisi b" required>
+                            <input type="number" id="sisi-c" placeholder="Sisi c" required>
+                            <div>
+                                <p id="hasil"></p>
+                                <p id="eror"></p>
+                            </div>
+                            <button type="button" onclick="hitungKeliling()" class="button-triangle">Hitung</button>
+                            <button type="reset" class="button-reset">Reset</button>
+                        </form>
+
+                    </div>
+                   </div>     
+            </section>
+        </Section>
+        </main>
+<!--footer-->
+        <footer>
+            <h6>Copyright 2023 Bellina at Revou</h6>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>

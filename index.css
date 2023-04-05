@@ -1,0 +1,118 @@
+/* css Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body*/
+body{
+    padding: 0 20px;
+}
+/* title*/
+.title{
+    margin-top: 20px;
+    text-align: center;
+}
+.subtitle1{
+    margin: 10px 0px;
+    text-align: center;
+}
+.subtitle2{
+    margin: 20px 0px;
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu > a{
+    text-decoration: none;
+}
+.menu-triangle{
+    background-color: #00d9ff;
+    color: black;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+.menu-Triangle-Parallelogramtriangle{
+    background-color: #00d9ff;
+    color: black;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;  
+}
+.card{
+    border: 1px blue solid;
+    padding: 20px;
+    box-shadow: -6px 9px 20px 4px rgba(0,0,0,0.48);
+}
+.luas-segitiga{
+    background-color: #00d9ff;
+    color: black;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+}
+.form-triangle{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.form-triangle > input{
+    padding: 8px 4px;
+    border-radius: 6px;
+    width: 100%;
+}
+.button-triangle{
+    background-color: #00d9ff;
+    padding: 6px 8px;
+    color: black;
+    border: none;
+    border-radius: 6px;
+}
+.button-reset{
+    padding: 8px 8px;
+    background-color: #FFEB3B;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.Keliling-Segitiga{
+    background-color: #00d9ff;
+    color: black;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+}
+.luas-jajargenjang{
+    background-color: #00d9ff;
+    color: black;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 1px;
+}
+.Keliling-Jajargenjang{
+    background-color: #00d9ff;
+    color: black;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+}
